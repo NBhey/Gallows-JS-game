@@ -1,4 +1,3 @@
-const destination = (place) =>{
-    console.log(` I would love to visit ${place}`);
-}
-destination('Ростов');
+import getRandomWord from "./js/getRandomWord";
+
+console.log(getRandomWord()) 
