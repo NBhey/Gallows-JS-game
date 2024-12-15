@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.panel__char-list {
+  list-style-type: none;
+  display: flex;
+  gap: 5px;
+}
+
+.panel__char-list > li {
+  font-size: 25px;
+}

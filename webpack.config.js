@@ -1,6 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const webpack = require("webpack")
+const webpack = require("webpack");
 
 module.exports = {
   // определяем точку входа приложения
@@ -12,7 +12,22 @@ module.exports = {
     path: path.resolve(__dirname, "./dist"),
     filename: "[name].bundle.js", //name соответствует названию файла в src (index)
   },
-
+  module: {
+    rules: [
+      {
+        test: /\.html$/i,
+        use: "html-loader",
+      },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(?:ico|gif|png|jpg|jpeg|webp)$/i,
+        type: "asset/resource",
+      },
+    ],
+  },
   devServer: {
     historyApiFallback: true,
     open: true,
