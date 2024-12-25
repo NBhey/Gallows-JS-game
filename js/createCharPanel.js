@@ -34,11 +34,9 @@ export default function createCharPanel() {
     "ю",
     "я",
   ];
-  console.log(document.querySelector(".panel__char-list"));
-  console.log(document.querySelector(".panel__char-list").children);
   charArr.map((el) => {
     let elementList = document.createElement('li')
-    elementList.innerText = el
+    elementList.innerHTML = `<li class='target-char'>${el}</li>`
     document.querySelector(".panel__char-list").appendChild(elementList)
   });
 }
