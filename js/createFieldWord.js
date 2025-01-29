@@ -4,5 +4,4 @@ export default function createFieldWord(numOfchar){
     for (let i = 0; i <= numOfchar; i += 1){
         fieldWord.append(_element)
     }
-    return
 }

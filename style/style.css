@@ -25,6 +25,7 @@
   gap: 10px;
 }
 
-.panel__char-list > li {
+.target-char {
+  color: black;
   font-size: 25px;
 }
