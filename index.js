@@ -4,14 +4,17 @@ import createFieldWord from "./js/createFieldWord";
 import displayWord from "./js/displayWord";
 import checkCharInWord from "./js/checkCharInWord";
 import showLetter from "./js/showLetter";
+
 import "./style/style.css";
 
 createCharPanel();
 
 let randomWord = getRandomWord();
+
 displayWord(randomWord);
-console.log(randomWord);
+
 createFieldWord();
+
 let allChar = document.querySelectorAll(".target-char");
 
 allChar.forEach((e) => {
