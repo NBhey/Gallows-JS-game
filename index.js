@@ -21,7 +21,6 @@ allChar.forEach((e) => {
   e.addEventListener("click", (currentEl) => {
     let el = currentEl.target;
     if (checkCharInWord(randomWord, el)) {
-      el.style.color = "green";
       showLetter(randomWord, el);
     } else {
       el.style.color = "red";

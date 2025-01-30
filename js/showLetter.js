@@ -4,4 +4,5 @@ export default function showLetter(word,letter){
             document.querySelector('.word').children[i].textContent = letter.textContent
         }
     }
+    letter.style.color = "green";
 }
