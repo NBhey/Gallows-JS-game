@@ -27,3 +27,9 @@ allChar.forEach((e) => {
     }
   });
 });
+
+
+let gallow = document.querySelector('.gallow')
+let gallowTale = document.createElement('img')
+gallowTale.src = './image/Туловище.png'
+gallow.append(gallowTale)
