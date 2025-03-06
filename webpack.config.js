@@ -1,7 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const webpack = require("webpack");
-
+const CopyPlugin = require("copy-webpack-plugin");
 module.exports = {
   // определяем точку входа приложения
   entry: {
@@ -39,6 +39,12 @@ module.exports = {
       title: "Виселица",
       template: path.resolve(__dirname, "./index.html"),
       output: "index.html",
+    }),
+    new CopyPlugin({
+      patterns: [
+        { from: "image", to: "image" },
+        
+      ],
     }),
   ],
 };

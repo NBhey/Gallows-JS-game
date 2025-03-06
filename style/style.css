@@ -5,11 +5,30 @@
 }
 
 .gallow {
+  position: relative;
   margin: 0 auto;
   
   width: 500px;
   height: 500px;
-  background-color: red;
+  /* background-color: red; */
+}
+
+.beam {
+  position: absolute;
+  bottom: 25%;
+  right: 0;
+}
+
+.head {
+  position: absolute;
+  bottom: 52%;
+  right: 53%;
+}
+
+.body {
+  position: absolute;
+  bottom: 32%;
+  right: 61%;
 }
 
 .word {
