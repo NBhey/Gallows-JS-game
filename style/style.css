@@ -8,7 +8,7 @@
   position: relative;
   margin: 0 auto;
   
-  width: 500px;
+  max-width: 500px;
   height: 500px;
   /* background-color: red; */
 }
@@ -28,6 +28,12 @@
 .body {
   position: absolute;
   bottom: 32%;
+  right: 61%;
+}
+
+.rightHand{
+  position: absolute;
+  bottom: 45%;
   right: 61%;
 }
 
