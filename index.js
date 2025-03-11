@@ -4,7 +4,7 @@ import createFieldWord from "./js/createFieldWord";
 import displayWord from "./js/displayWord";
 import checkCharInWord from "./js/checkCharInWord";
 import showLetter from "./js/showLetter";
-
+import showGallow from "./js/showGallow";
 import "./style/style.css";
 
 createCharPanel();
@@ -23,12 +23,8 @@ allChar.forEach((e) => {
     if (checkCharInWord(randomWord, el)) {
       showLetter(randomWord, el);
     } else {
-      el.style.color = "red";
+      showGallow(el)
     }
   });
 });
-
-let gallow = document.querySelector('.gallow')
-
-
 
