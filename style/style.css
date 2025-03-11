@@ -7,34 +7,61 @@
 .gallow {
   position: relative;
   margin: 0 auto;
-  
-  max-width: 500px;
+  padding-top: 10vh;
+
+  max-width: 320px;
   height: 500px;
-  /* background-color: red; */
+
+  text-align: center;
 }
 
 .beam {
+  display: none;
   position: absolute;
   bottom: 25%;
   right: 0;
 }
 
 .head {
+  display: none;
   position: absolute;
   bottom: 52%;
-  right: 53%;
+  left: 21.5%;
 }
 
 .body {
+  display: none;
   position: absolute;
   bottom: 32%;
-  right: 61%;
+  left: 33.5%;
 }
 
-.rightHand{
+.rightHand {
+  display: none;
   position: absolute;
   bottom: 45%;
-  right: 61%;
+  left: 22.5%;
+}
+
+.leftHand {
+  display: none;
+  position: absolute;
+  bottom: 45%;
+  left: 34.5%;
+}
+
+.rightLeg {
+  display: none;
+  position: absolute;
+  bottom: 24%;
+  left: 18.8%;
+}
+
+.leftLeg {
+  display: none;
+  position: absolute;
+  bottom: 24%;
+  left: 33.5%;
 }
 
 .word {
