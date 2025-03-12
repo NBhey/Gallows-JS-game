@@ -10,21 +10,13 @@ import "./style/style.css";
 createCharPanel();
 
 let randomWord = getRandomWord();
-
 displayWord(randomWord);
 
 createFieldWord();
-
-let allChar = document.querySelectorAll(".target-char");
-
-allChar.forEach((e) => {
+document.querySelectorAll(".target-char").forEach((e) => {
   e.addEventListener("click", (currentEl) => {
     let el = currentEl.target;
-    if (checkCharInWord(randomWord, el)) {
-      showLetter(randomWord, el);
-    } else {
-      showGallow(el)
-    }
+   checkCharInWord(randomWord, el) ?  showLetter(randomWord, el) : showGallow(el)
   });
 });
 
